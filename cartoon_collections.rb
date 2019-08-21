@@ -6,7 +6,7 @@ def roll_call_dwarves(dwarves)
   end
 end
 
-def summon_captain_planet(array)
+def summon_captain_planet(planeteers)
   exclaim = []
   array.each do |element|
     exclaim << "#{element.capitalize}!"
@@ -14,8 +14,10 @@ def summon_captain_planet(array)
   exclaim
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(array)
+  if array.any? {}
+  else
+  
 end
 
 def find_the_cheese# code an argument here
