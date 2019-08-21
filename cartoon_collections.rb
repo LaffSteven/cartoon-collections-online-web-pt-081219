@@ -6,7 +6,7 @@ def roll_call_dwarves(dwarves)
   end
 end
 
-def summon_captain_planet(planeteers)
+def summon_captain_planet(array)
   exclaim = []
   array.each do |element|
     exclaim << "#{element.capitalize}!"
