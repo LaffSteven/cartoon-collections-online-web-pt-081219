@@ -1,10 +1,10 @@
 def roll_call_dwarves(dwarves)
-  if block_given?
+  if !block_given?
+    p "No Block!"
+  else
     dwarves.each_with_index.map do |name, i|
       yield "#{i}. #{name}"
     end
-  else
-    p "No Block!"
   end
 end
 
