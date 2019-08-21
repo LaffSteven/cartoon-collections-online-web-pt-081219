@@ -1,10 +1,8 @@
 def roll_call_dwarves(dwarves)
-  if !block_given?
-    p "No Block!"
-  else
-    dwarves.map do |name|
-      puts yield("#{name}")
-    end
+  i = 0
+  dwarves.each do
+    puts "#{i+1}. #{dwarves[i]}"
+    i += 0
   end
 end
 
