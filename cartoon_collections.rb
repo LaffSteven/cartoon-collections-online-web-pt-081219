@@ -1,6 +1,10 @@
 def roll_call_dwarves(dwarves)
-  dwarves.each_with_index.map do |name, i|
-    puts yield "#{i}. #{name}"
+  if block_given?
+    dwarves.each_with_index.map do |name, i|
+      puts yield "#{i}. #{name}"
+    end
+  else
+    p "No Block!"
   end
 end
 
