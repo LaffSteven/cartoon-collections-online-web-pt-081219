@@ -3,7 +3,7 @@ def roll_call_dwarves(dwarves)
     p "No Block!"
   else
     dwarves.each_with_index.map do |name, i|
-      puts ""
+      puts "#{i}. #{name}"
       yield "#{i}. #{name}"
     end
   end
